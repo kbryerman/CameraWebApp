@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ZoomIn_Clicked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ZoomIn_Clicked" stroke="#FFFFFF">
+            <g id="Group-3">
+                <g id="Group" transform="translate(10.000000, 10.000000)">
+                    <circle id="Oval" stroke-width="2" cx="6.5" cy="6.5" r="6.5"></circle>
+                    <path d="M14,13 L16.0276926,15.0276926" id="Line-2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M4.5,6.5 L8.5,6.5" id="Line" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M6.5,4.5 L6.5,8.5" id="Line" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <circle id="Oval-2" stroke-opacity="0.75" stroke-width="2" cx="18" cy="18" r="17"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

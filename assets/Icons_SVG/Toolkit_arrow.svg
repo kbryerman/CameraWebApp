@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="30px" viewBox="0 0 16 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>toolkit_arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tooltip_Minimized_v3" transform="translate(-452.000000, -50.000000)">
+            <g id="Group-2" transform="translate(406.000000, 34.000000)">
+                <g id="toolkit_arrow" transform="translate(46.000000, 16.000000)">
+                    <path d="M0.0169725737,30 C8.30124382,30 15.0169726,23.2842712 15.0169726,15 C15.0169726,6.71572875 8.30124382,0 0.0169725737,0 C0.0169725737,9.01512701 0.0169725737,14.015127 0.0169725737,15 C-0.00565752455,15 -0.00565752455,20 0.0169725737,30 Z" id="Oval-9" fill="#FFFFFF" transform="translate(7.508486, 15.000000) rotate(-180.000000) translate(-7.508486, -15.000000) "></path>
+                    <polygon id="Triangle" stroke="#4262D6" fill="#4262D6" stroke-linecap="round" stroke-linejoin="round" transform="translate(8.000000, 14.750000) rotate(-180.000000) translate(-8.000000, -14.750000) " points="10 14.75 6 18.5 6 11"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

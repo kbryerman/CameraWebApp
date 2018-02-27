@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>HideUI</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M14,1 L2,13" id="path-1"></path>
+        <filter x="-219.2%" y="-142.3%" width="538.5%" height="538.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="1" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="10" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="10" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HideUI">
+            <g id="Group-12">
+                <g id="Group-9" stroke-opacity="0.25" stroke="#FFFFFF">
+                    <circle id="Oval-10" cx="13" cy="13" r="12.5"></circle>
+                </g>
+                <g id="Group-6" transform="translate(5.000000, 6.000000)">
+                    <circle id="Oval-13" fill-opacity="0.65" fill="#FFFFFF" opacity="0.595165308" cx="8" cy="7" r="3"></circle>
+                    <path d="M8,12 C10.9455187,12 13.6121853,10.3333333 16,7 C13.6121853,3.66666667 10.9455187,2 8,2 C5.05448133,2 2.38781467,3.66666667 0,7 C2.38781467,10.3333333 5.05448133,12 8,12 Z" id="Oval-12" stroke-opacity="0.65" stroke="#FFFFFF" stroke-width="2" opacity="0.595165308"></path>
+                    <g id="Line-3" stroke-linecap="round" stroke-linejoin="round">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use stroke="#FFFFFF" stroke-width="2" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

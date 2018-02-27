@@ -1,0 +1,445 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-width: 750px;
+}
+
+
+body{
+    background: black;
+    height: 100%;
+    width: 100%;
+}
+
+ul{
+    padding: 0;
+}
+
+ul li{
+    display: inline-block;   
+}
+
+
+
+
+
+/*HEADER*/
+
+.titleHeader{
+    position: relative;
+    height: 35px;
+    width: 100%;
+    background-image: linear-gradient(to right, #3023ae, #5Ca7ed);
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    z-index: 1;
+    opacity: .85;
+}
+
+.titleHeader h1{
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 5.5px 0 0 0;
+    font-size: 18px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    left: 38px;
+}
+
+.headerIcons{
+    display: inline-block;
+    float: right;
+    margin: 4.5px 4.5px 0 0;
+}
+
+.icon_minimizeScreen{
+    background-image: url(assets/Icons_SVG/Minimize.svg);
+    height: 26px;
+    width: 26px;
+    margin-right: 5px;   
+}
+
+.icon_minimizeScreen:hover, .minimizeScreen:active{
+    background-image: url(assets/Icons_SVG/Minimize_HoverClick.svg);
+}
+
+.icon_expandScreen{
+    background-image: url(assets/Icons_SVG/Expand.svg);
+    height: 26px;
+    width: 26px;
+    margin-right: 10px;
+}
+
+.icon_expandScreen:hover, .minimizeScreen:active{
+    background-image: url(assets/Icons_SVG/Expand_HoverClick.svg);
+}
+
+
+
+
+/*TOOLBAR*/
+
+.container2{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.button_container{
+    width: 126px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.toolbar_button{
+    background-image: linear-gradient(to right, #4160D4, #5FAAE7);
+    width: 100%;
+    height: 36px;
+    border-radius: 18px;
+    z-index: 1;
+    position: absolute;
+    margin: 0 auto;
+    top: 13px;
+    border: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    font-family: Lato;
+    font-size: 18px;
+    color: white;
+    opacity: .8;
+    cursor: pointer;
+    line-height: 1.85;
+}
+
+.toolbar_button img{
+    float: left;
+    margin: 2px 0 2px 3px;
+    width: 16px;
+    height: 30px;
+    
+}
+
+/*
+.toolbar_button h2{
+    text-align: center;
+    font-weight: 300;
+    font-family: Lato;
+    font-size: 18px;
+    color: white;
+    padding-top: 5px;
+    margin: 0;
+}
+*/
+
+.container{
+    padding-left: 35px;
+    width: 585px;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
+.navWrapper{
+    display: inline;
+    width: 100%;
+}
+
+.navWrapper li nav{
+    padding-top: 6px;
+    opacity: .85;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    width: 550px;
+    height: 50px;
+    background-image: linear-gradient(to right, #3023ae, #5Ca7ed);
+    border-radius: 25px;
+}
+
+nav ul li{
+    margin-bottom: 5px;
+}
+
+nav ul div{
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 36px;
+    width: 1px;
+    padding: 0;
+}
+
+nav ul button{
+    margin-top: 3px;
+    margin-right: 3px;
+    display: inline-block;
+    border: 0;
+    background: transparent;
+    padding: 0;
+}
+
+nav ul button img{
+    padding-left: 7px;
+}
+
+.icon_zoomOut{
+    background-image: url(assets/Icons_SVG/ZoomOut.svg);
+    height: 36px;
+    width: 36px;
+    margin-left: 31px;
+}
+
+.icon_zoomOut:hover{
+    background-image: url(assets/Icons_SVG/ZoomOut_Hover.svg);
+}
+
+.icon_zoomOut:active{
+    background-image: url(assets/Icons_SVG/ZoomOut_Clicked.svg);
+}
+
+.icon_zoomIn{
+    background-image: url(assets/Icons_SVG/ZoomIn.svg);
+    height: 36px;
+    width: 36px;
+    margin-left: 5.5px;
+    margin-right: 11.5px; 
+}
+
+.icon_zoomIn:hover{
+    background-image: url(assets/Icons_SVG/ZoomIn_Hover.svg);
+}
+
+.icon_zoomIn:active{
+    background-image: url(assets/Icons_SVG/ZoomIn_Clicked.svg);
+}
+
+.icon_rotateLeft{
+    background-image: url(assets/Icons_SVG/RotateLeft.svg);
+    height: 36px;
+    width: 36px;
+    margin-left: 11.5px;
+}
+
+.icon_rotateLeft:hover{
+    background-image: url(assets/Icons_SVG/RotateLeft_Hover.svg);
+}
+
+.icon_rotateLeft:active{
+    background-image: url(assets/Icons_SVG/RotateLeft_Clicked.svg);
+}
+
+.icon_rotateA{
+    background-image: url(assets/Icons_SVG/A_0.svg);
+    height: 36px;
+    width: 25px;
+}
+
+.icon_rotateRight{
+    background-image: url(assets/Icons_SVG/RotateRight.svg);
+    height: 36px;
+    width: 36px;
+    margin-right: 11.5px; 
+}
+
+.icon_rotateRight:hover{
+    background-image: url(assets/Icons_SVG/RotateRight_Hover.svg);
+}
+
+.icon_rotateRight:active{
+    background-image: url(assets/Icons_SVG/RotateRight_Clicked.svg);
+}
+
+.icon_exposureMinus{
+    background-image: url(assets/Icons_SVG/ExposureMinus.svg);
+    height: 36px;
+    width: 36px;
+    margin-left: 11.5px;
+    margin-right: 5.5px;
+}
+
+.icon_exposureMinus:hover{
+    background-image: url(assets/Icons_SVG/ExposureMinus_Hover.svg);
+}
+
+.icon_exposureMinus:active{
+    background-image: url(assets/Icons_SVG/ExposureMinus_Clicked.svg);
+}
+
+.icon_exposurePlus{
+    background-image: url(assets/Icons_SVG/ExposurePlus.svg);
+    height: 36px;
+    width: 36px;
+    margin-left: 5.5px;
+    margin-right: 11.5px
+}
+
+.icon_exposurePlus:hover{
+    background-image: url(assets/Icons_SVG/ExposurePlus_Hover.svg);
+}
+
+.icon_exposurePlus:active{
+    background-image: url(assets/Icons_SVG/ExposurePlus_Clicked.svg);
+}
+
+.icon_focus{
+    background-image: url(assets/Icons_SVG/Focus.svg);
+    height: 36px;
+    width: 36px;
+    margin-left: 11.5px;
+    margin-right: 11.5px;
+}
+
+.icon_focus:hover{
+    background-image: url(assets/Icons_SVG/Focus_Hover.svg);
+}
+
+.icon_focus:active{
+    background-image: url(assets/Icons_SVG/Focus_Clicked.svg);
+}
+
+.icon_freeze{
+    background-image: url(assets/Icons_SVG/Freeze.svg);
+    height: 36px;
+    width: 36px;
+    margin-left: 11.5px;
+    margin-right: 11.5px;
+}
+
+.icon_freeze:hover{
+    background-image: url(assets/Icons_SVG/Freeze_Hover.svg);
+}
+
+.icon_freeze.click{
+    background-image: url(assets/Icons_SVG/Freeze_Clicked.svg);
+}
+
+.icon_minimizeTool{
+    height: 40px;
+    width: 19px;
+    cursor: pointer;
+}
+
+.iconLine{
+    background: white;
+    opacity: .25;
+}
+
+.icon_hide{
+    background-image: url(assets/Icons_SVG/HideUI.svg?v=0);
+    width: 26px;
+    height: 26px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+}
+
+.icon_hide:hover, .minimizeScreen:active{
+    background-image: url(assets/Icons_SVG/HideUI_HoverClick.svg);
+}
+
+
+
+
+/*MENU BUTTON*/
+
+
+.menu{
+    z-index: 1;
+    float: right;
+    background-image: url(assets/Icons_SVG/MenuIcon.svg?v=0);
+    width: 36px;
+    height: 36px;
+    margin: 13px 10px 0 0;
+    overflow: hidden;    
+}
+
+
+
+
+/*CAMERA BUTTONS*/
+
+
+.bottom_container2{
+    position: absolute;
+    bottom: 19px;
+    left: 50%
+}
+
+.bottom_container{
+    position: relative;
+    z-index: 1;
+    left: -50%
+}
+
+.bottom_nav{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.snapshot{
+    background-image: url(assets/Icons_SVG/Snapshot.svg);
+    width: 70px;
+    height: 70px;
+    margin-right: 6.5px;
+}
+
+.snapshot:active{
+    background-image: url(assets/Icons_SVG/Snapshot_HoverClick.svg);
+}
+
+.record{
+    background-image: url(assets/Icons_SVG/Record.svg);
+    width: 70px;
+    height: 70px;
+    margin-left: 6.5px;
+}
+
+
+@-webkit-keyframes pulsate
+{
+        0% {background-image: url(assets/Icons_SVG/Record.svg);}
+      100% {background-image: url(assets/Icons_SVG/Record_HoverClick.svg);}
+}
+
+.record.click{
+    background-image: url(assets/Icons_SVG/Record_HoverClick.svg);
+    animation: pulsate 1s infinite;
+}
+
+/*
+.videoPosition{
+    position: relative;
+    display: block;
+    min-width: 600px;
+    padding: 35px 0 0 0;
+    top: 215px;
+}
+*/
+
+.videoWrapper {
+    position: absolute;
+    padding-bottom: 56.25%; 
+    height: 0;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.videoWrapper video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
