@@ -80,7 +80,26 @@ ul li{
     background-image: url(assets/Icons_SVG/Expand_HoverClick.svg);
 }
 
+.fullScreen_UI{
+    width: 100%;
+    display: none;
+    position: relative;
+    z-index: 1;
+}
 
+.icon_exitFullScreen{
+    background-image: url(assets/Icons_SVG/ExitFull.svg);
+    height: 26px;
+    width: 26px;
+    top: 10px;
+    right: 0;
+    margin: 10px 14px 0 0;
+    float: right;
+}
+
+.icon_exitFullScreen:hover{
+    background-image: url(assets/Icons_SVG/ExitFull_HoverClick.svg);
+}
 
 
 /*TOOLBAR*/
@@ -89,6 +108,7 @@ ul li{
     position: relative;
     width: 100%;
     z-index: 1;
+    clear: both;
 }
 
 .button_container{
@@ -236,6 +256,11 @@ nav ul button img{
     background-image: url(assets/Icons_SVG/RotateLeft_Clicked.svg);
 }
 
+.icon_rotateLeft:active .icon_rotateA{
+   transform: rotate(-90deg);
+   -webkit-transform: rotate(-90deg);
+}
+
 .icon_rotateA{
     background-image: url(assets/Icons_SVG/A_0.svg);
     height: 36px;
@@ -246,16 +271,23 @@ nav ul button img{
     background-image: url(assets/Icons_SVG/RotateRight.svg);
     height: 36px;
     width: 36px;
-    margin-right: 11.5px; 
+    margin-right: 11.5px;
 }
 
 .icon_rotateRight:hover{
     background-image: url(assets/Icons_SVG/RotateRight_Hover.svg);
 }
 
+.icon_rotateRight:active .icon_rotateA{
+   transform: rotate(90deg);
+   -webkit-transform: rotate(90deg);
+}
+
 .icon_rotateRight:active{
     background-image: url(assets/Icons_SVG/RotateRight_Clicked.svg);
 }
+
+
 
 .icon_exposureMinus{
     background-image: url(assets/Icons_SVG/ExposureMinus.svg);
@@ -278,7 +310,7 @@ nav ul button img{
     height: 36px;
     width: 36px;
     margin-left: 5.5px;
-    margin-right: 11.5px
+    margin-right: 11.5px;
 }
 
 .icon_exposurePlus:hover{
@@ -413,6 +445,50 @@ nav ul button img{
     background-image: url(assets/Icons_SVG/Record_HoverClick.svg);
     animation: pulsate 1s infinite;
 }
+
+
+
+
+/*TOOLTIP*/
+
+.tooltip{
+    position: relative;
+}
+
+.tooltiptext {
+    display: none;
+    width: 80px;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    padding: 2px 0;
+    border-radius: 10px;
+    font-family: Lato;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -40px;
+    font-size: 12px;
+    transition: opacity 0.5s linear;
+}
+
+.tooltip:hover .tooltiptext {
+    display: inline-block;
+    opacity: .75;
+}
+
+.tooltip:active .tooltiptext{
+    display: none;
+}
+
+/*
+@-webkit-keyframes fade-in {
+    0% { opacity: 0;}   
+    100% { opacity: .75;}
+}
+*/
 
 /*
 .videoPosition{

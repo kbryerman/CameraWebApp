@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="jquery.fullscreen.js"></script>
+    <script type="text/javascript" src="jquery-fullscreen.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
     
     <title>CAMERA WEB APP</title>
@@ -20,7 +20,11 @@
         <li class="icon_minimizeScreen"></li>
         <li class="icon_expandScreen"></li>
     </ul>
-</div>    
+</div>
+
+<div class="fullScreen_UI">
+      <div class="icon_exitFullScreen"></div>
+    </div>
  
 <div class="container2">
     
@@ -32,19 +36,27 @@
     <li>
     <nav>
       <ul class="toolbarIcons">
-        <li class="icon_zoomOut"></li>
-        <li class="icon_zoomIn"></li>
+        <li class="icon_zoomOut tooltip">
+            <span class="tooltiptext">Zoom Out</span></li>
+        <li class="icon_zoomIn tooltip">
+            <span class="tooltiptext">Zoom In</span></li>
           <div class="iconLine"></div>
-        <li class="icon_rotateLeft"></li>
-        <li class="icon_rotateA"></li>
-        <li class="icon_rotateRight"></li>
+        <li class="icon_rotateLeft tooltip">
+          <span class="tooltiptext">Rotate Left</span></li>
+        <li class="icon_rotateA tooltip"></li>
+        <li class="icon_rotateRight tooltip">
+          <span class="tooltiptext">Rotate Right</span></li>
           <div class="iconLine"></div>
-        <li class="icon_exposureMinus"></li>
-        <li class="icon_exposurePlus"></li>
+        <li class="icon_exposureMinus tooltip">
+          <span class="tooltiptext">Decrease</span></li>
+        <li class="icon_exposurePlus tooltip">
+          <span class="tooltiptext">Increase</span></li>
           <div class="iconLine"></div>
-        <li class="icon_focus"></li>
+        <li class="icon_focus tooltip">
+          <span class="tooltiptext">Focus</span></li>
           <div class="iconLine"></div>
-        <li class="icon_freeze"></li>
+        <li class="icon_freeze tooltip">
+          <span class="tooltiptext">Freeze</span></li>
         <button class="icon_minimizeTool"><img src="assets/Icons_SVG/MinimizeTooltip.svg"></button>
       </ul>
     </nav>
@@ -52,7 +64,6 @@
     <li class="icon_hide"></li>
 </ul>
 </div>
-    
 </div>
     
 <div class="bottom_container2">    
@@ -62,7 +73,7 @@
         <li class="record"></li>
      </ul>
 </div>
-    </div>
+</div>
  
     
 <div class="videoPosition">
