@@ -78,7 +78,6 @@
 
         cancel: function () {
             document.webkitCancelFullScreen();
-            $('.titleHeader').show();
         },
 
         isActive: function () {
